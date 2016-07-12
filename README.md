@@ -36,6 +36,13 @@ As you know to access the command palette and introduce commands you can use ***
 ## Linux users
 **Linux also requires you to reclaim ownership of the vs code folders** 
 You can achieve this by executing this on your terminal (Ubuntu):
+
+```sh
+sudo code --user-data-dir=.
+```
+
+If the above does not work, then you can try the following:
+
 ```sh
 #for vs code:
 sudo chown -R $(whoami) /usr/share/code
